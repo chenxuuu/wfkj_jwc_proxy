@@ -1,0 +1,34 @@
+<html lang="zh_CN">
+<head>
+<meta charset="UTF-8">
+<title>解决教务系统页面错位影响使用 bug 的方法</title>
+</head>
+<body>
+解决教务系统页面错位影响使用 bug 的方法：<br>
+原方法比较麻烦，点击此处查看<a href="http://ww2.sinaimg.cn/large/0060lm7Tgw1f6scl8m60ej30w02j01kx.jpg" target="_blank">旧方法</a><br>
+导致错位的原因是因为教务系统css写错了，原理不多解释，我就说下解决办法<br><br>
+本方法适用于chrome及所有webkit内核的国产浏览器（搜狗浏览器、百度浏览器、QQ 浏览器、UC 浏览器、遨游浏览器、360 极速浏览器、猎豹浏览器、2345 浏览器、Opera浏览器）、火狐浏览器<br>
+不适用于edge浏览器、IE及IE内核的国产浏览器（如360安全浏览器）。<br><br><br><br>
+首先安装一个插件：Stylish<br>
+插件一般在浏览器自带应用商店就能搜到，你也可以从此链接下载chrome版的Stylish插件：http://pan.baidu.com/s/1bo6QnF5<br>
+装插件不会的自己百度去吧<br>
+安装完毕之后点击插件，选择“管理已安装的样式。”<br>
+<img src="http://ww1.sinaimg.cn/large/0060lm7Tgw1f6t0vhkue5j306y052t95.jpg"/><br><br>
+单击左侧的“编写新样式”：<br>
+<img src="http://ww3.sinaimg.cn/large/0060lm7Tgw1f6t0xm6o7gj308k0973z9.jpg"/><br><br>
+在代码区域，复制粘贴填上：<br>
+<pre>
+.toolbox {
+    margin-top: 100px;
+}
+.main_box {
+    margin-top: 10px;
+}
+</pre><br>
+在下方的“应用对象”处，选择“该域上的网址”，在右边文本框中填入“wfkj.papapoi.com”。<br>
+为了兼容王瑞卿同学搭建的备用站wfxy.vuuuv.cn，我们需要再添加一个网址，选择“该域上的网址”，在右边文本框中填入“wfkj.papapoi.com”<br>
+在左边填好名称，点保存，如下图：<br>
+<img src="http://ww2.sinaimg.cn/large/c03c4ee6jw1fbg5fy5d2aj20oj0hvwj8.jpg"/><br><br>
+最后，问题解决。
+</body>
+</html>
